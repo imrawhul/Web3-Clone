@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html id="topp" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Agency</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Theme Colors Pink: #ef3b9b Org: #ed9939 */
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+        * {
+            font-family: "Syne", sans-serif;
+            font-optical-sizing: auto;
+
+            font-style: normal;
+            scroll-behavior: smooth;
+
+        }
+
+        .noscrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .glow {
+            box-shadow: #ed993913 0px 20px 30px -10px;
+            overflow: visible;
+        }
+
+        .scrolling-content {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            /* Smooth scrolling */
+            white-space: nowrap;
+            /* Prevent text from wrapping */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="overflow-x-hidden w-full mx-auto flex flex-col items-center   text-white  box-border relative bg-[#101010]">
+
+
+    <!-- Blur BG  -->
+    <div class="absolute w-full h-full backdrop-blur-3xl "></div>
+    <div class=" absolute top-0 left-0 w-full h-full   flex justify-center -z-50  ">
+        <div class=" w-[1080px] h-[100vh]  relative  ">
+            <div id="p1" class=" w-full relative  h-[100vh]">
+                <div id="pinkB" class=" w-48 h-48 rounded-full  left-0 top-[40vh] absolute bg-[#ef3b9b]  opacity-20">
+                </div>
+                <div id="orgB" class="absolute right-0 top-[10vh] w-48 h-48 rounded-full  bg-[#ed9839]  opacity-40">
+                </div>
+            </div>
+
+            <div id="p2 " class="w-full opacity-20 relative h-[100vh] flex justify-start mt-12 items-center flex-col">
+                <div class=" relative w-full  text-center">
+                    <i
+                        class=" fa-solid fa-bolt text-[24vw] bg-gradient-to-b from-[#ef3b9b] to-[#ed9839] text-transparent bg-clip-text"></i>
+                </div>
+                <div class="w-full flex justify-between">
+
+                    <div class=" relative  w-full  ">
+                        <i
+                            class=" fa-solid fa-bolt text-[12vw] bg-gradient-to-b from-[#ef3b9b] to-[#ed9839] text-transparent bg-clip-text"></i>
+                    </div>
+                    <div class="top-12 relative w-full  text-right">
+                        <i
+                            class=" relative fa-solid fa-bolt text-[16vw] bg-gradient-to-b from-[#ef3b9b] to-[#ed9839] text-transparent bg-clip-text"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="mainDiv w-full   relative flex flex-col  items-center  ">
+
+        <!-- Nav Starts here -->
+        <nav
+            class=" z-50 sm:p-4 p-3 flex justify-center items-center sticky top-0 nav-contaier mt-8  w-full  backdrop-blur-md  ">
+            <div class="max-w-[1080px] w-full px-8 lg:px-0 flex justify-between items-center">
+
+
+                <a href="#topp">
+
+
+                    <div class="relative logo text-lg font-extrabold cursor-pointer">Web3</div>
+                </a>
+                <ul class="sm:flex text-center sm:gap-6 sm:justify-center sm:text-sm hidden">
+                    <a href="#topp">
+
+
+                        <li class=" cursor-pointer">Home</li>
+                    </a>
+                    <li class=" cursor-pointer">Services</li>
+                    <li class=" cursor-pointer">Portfolio</li>
+                    <li class=" cursor-pointer">About</li>
+
+                </ul>
+
+                <div class=" gap-4 items-end flex flex-col">
+
+
+
+                    <button class="flex items-center   uppercase">Connect Now
+                        <i class="relative -rotate-[45deg] pl-4 fa-solid fa-arrow-right top-[4px]"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </nav>
+        <!-- Mobile-View Menu -->
+        <div id="mbMenu"
+            class="fixed  bg-[#ffffff36] text-white  p-4 bottom-0 rounded-full z-50 w-[90vw] my-4  backdrop-blur-md">
+            <ul class="px-4 flex text-center flex-wrap gap-[6vw] justify-between text-sm items-center ">
+                <a href="#topp">
+
+
+                    <li class=" cursor-pointer">Home</li>
+                </a>
+                <li class=" cursor-pointer">Services</li>
+                <li class=" cursor-pointer">Portfolio</li>
+                <li class=" cursor-pointer">About</li>
+
+            </ul>
+        </div>
+
+        <!-- Hero Sec -->
+        <div class="max-w-[1080px] sm:px-0 px-8 container flex justify-center items-center flex-col w-full ">
+
+            <!-- title -->
+            <div
+                class=" mt-8 flex flex-col justify-center items-center title-container sm:text-[80px] text-[12vw] font-bold ">
+
+                <h1
+                    class=" text-nowrap text-center  text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-400 to-white">
+                    Web Design</h1>
+                <h1
+                    class="relative -top-6  bg-gradient-to-r from-[#ef3b9b] to-[#ed9839] text-transparent bg-clip-text ">
+                    Agency.</h1>
+            </div>
+
+            <!-- 3 cols -->
+            <div
+                class=" sm:px-0  flex sm:flex-row flex-col  sm:justify-between justify-center relative sm:items-center   sm:mt-8">
+
+                <!-- left -->
+                <div class=" px-8 sm:w-1/3 flex sm:flex-col justify-center h-full  gap-8 relative  ">
+                    <div
+                        class=" text-3xl rounded-lg bg-gradient-to-l from-[#ffffff1a] flex justify-center items-center flex-col w-40 py-4 ">
+                        <div>240+</div>
+                        <div class="text-sm font-thin text-gray-400">Businesses</div>
+                    </div>
+                    <div
+                        class="text-3xl rounded-lg bg-gradient-to-r from-[#ffffff1a] flex justify-center items-center flex-col w-40 py-4">
+                        <div>92%</div>
+                        <div class="text-sm font-thin text-gray-400">Businesses</div>
+                    </div>
+
+
+                </div>
+
+                <!-- center -->
+                <img id="skull"
+                    src="https://stonepaperscissors.in/wp-content/uploads/2024/04/Untitled_design__1___1_-removebg-1024x1024.webp"
+                    alt="" class="relative mx-auto sm:w-1/2 w-[70vw]  sm:mt-0 mt-8">
+
+                <!-- right -->
+                <div class="sm:px-4 px-8 mx-auto sm:block flex gap-4 sm:w-1/3  sm:mr-28  ">
+                    <p class="text-sm text-gray-400 w-full text-wrap  ">Lorem ipsum dolor sit ipsum dolor sit
+                        amet
+                        consectetur
+                        adipisicing.</p>
+                    <button class="bg-white text-black p-1 rounded-full text-sm sm:w-28 w-40 sm:mt-6">Get
+                        Started</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--services strip -->
+
+        <div
+            class="w-full  sm:mt-0 mt-8 flex justify-center items-center cursor-pointer select-none strip text-nowrap relative h-16 bg-[#2a2a2a] overflow-hidden border-y border-gray-700 -rotate-2 ">
+
+            <div class="    w-[1080px] overflow-hidden  ">
+
+                <div class=" flex justify-center items-center gap-4 scrolling-content">
+
+
+                    <div class="flex justify-center items-center gap-4 ">
+                        <h3>Graphic Design</h3>
+                        <i class="text-[#ed9839] fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <h3>Graphic Design</h3>
+                        <i class="text-[#ed9839] fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <h3>Graphic Design</h3>
+                        <i class="text-[#ed9839] fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="flex justify-center items-center gap-4">
+                        <h3>Graphic Design</h3>
+                        <i class="text-[#ed9839] fa-solid fa-bolt"></i>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Hero Ends Here -->
+
+        <!-- Services -->
+        <div class="px-8 sm:px-0 services relative max-w-[1080px] w-full ">
+            <h2 class="text-center text-4xl font-bold my-12">Our Services</h2>
+
+            <div class="w-full flex sm:flex-row flex-col justify-center  items-center">
+                <div class="left sm:w-1/2 w-full md:pr-24 sm:order-1 order-2 pr-12">
+                    <div class="font-bold text-2xl">UI/UX Design</div>
+                    <div class="text-gray-400 my-4">
+                        Lorem ipsum dolor sit amet consectet m m dolor sit amet consectet dolor sit amet consectetur,
+                        adipisicing elit. Reiciendis, est.
+                    </div>
+                    <ul class=" flex flex-col gap-3">
+                        <li class="flex justify-start items-center ">
+                            <i
+                                class="fa-solid fa-check bg-[#ffffff56] rounded-full p-1 text-center mr-2 text-[10px] text-[#ed9839] "></i>Lorem,
+                            ipsum dolor.
+                        </li>
+                        <li class="flex justify-start items-center ">
+                            <i
+                                class="fa-solid fa-check bg-[#ffffff56] rounded-full p-1 text-center mr-2 text-[10px] text-[#ed9839] "></i>Lorem,
+                            ipsum dolor.
+                        </li>
+                        <li class="flex justify-start items-center ">
+                            <i
+                                class="fa-solid fa-check bg-[#ffffff56] rounded-full p-1 text-center mr-2 text-[10px] text-[#ed9839] "></i>Lorem,
+                            ipsum dolor.
+                        </li>
+
+
+
+
+                    </ul>
+
+                    <div>
+                        <button
+                            class="border text-sm rounded-full flex items-center py-2 px-4 border-gray-400 mt-6 uppercase">Learn
+                            More
+                            <i class="relative -rotate-[45deg] pl-4 fa-solid fa-arrow-right top-[4px] "></i>
+                        </button>
+
+                    </div>
+                </div>
+                <div id="srvcimg" class="sm:mt-0 mt-4 relative right sm:order-2 order-1 sm:w-1/2">
+                    <img src="https://djitalservices.com/wp-content/uploads/2023/05/11121.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Numbers -->
+        <div
+            class=" border-y border-gray-600 w-full bg-[#ffffff0e] backdrop-blur-md h-32 my-12 flex justify-center items-center">
+            <div class="px-8 max-w-[1080px] w-full flex sm:justify-evenly justify-between">
+                <div class="flex flex-col items-center justify-center">
+                    <h3 class="sm:text-4xl text-[7vw] font-semibold font-sans">5M+</h3>
+                    <p class="text-gray-400">Customers</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <h3 class="sm:text-4xl text-[7vw] font-semibold font-sans">5M+</h3>
+                    <p class="text-gray-400">Customers</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <h3 class="sm:text-4xl text-[7vw] font-semibold font-sans">5M+</h3>
+                    <p class="text-gray-400">Customers</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <h3 class="sm:text-4xl text-[7vw] font-semibold font-sans">5M+</h3>
+                    <p class="text-gray-400">Customers</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="services relative max-w-[1080px] w-full mb-20 ">
+            <h2 class="text-center text-4xl font-bold my-12">Our Happy Customers</h2>
+
+            <div class=" flex gap-12  w-full flex-nowrap overflow-x-auto overflow-visible py-8 noscrollbar">
+
+                <!-- cust 1 -->
+                <div class="glow relative min-w-64 w-64 rounded-lg bg-gradient-to-t from-[#ffffff38]   p-[1px]">
+
+                    <div
+                        class="relative w-full h-full rounded-lg bg-gradient-to-t from-[#2d201e] to-[#0d0d0d]  text-[12px] p-3">
+                        <!-- profile pic -->
+                        <div class="absolute top-0 -translate-y-1/2  w-full flex justify-center items-center">
+                            <div class="w-auto  gap-2 flex p-1.5 bg-[#2e2e2e] rounded-full ">
+                                <img class="object-fill h-8 w-8 rounded-full "
+                                    src="https://pps.whatsapp.net/v/t61.24694-24/456321397_1189556845651585_6063297233160402127_n.jpg?ccb=11-4&oh=01_Q5AaIEkAQ3ylKVSVhTOqS1MHnhe_ZrCvitd4RAgVerwNL5dJ&oe=67107D37&_nc_sid=5e03e0&_nc_cat=100"
+                                    alt="">
+                                <i
+                                    class="fa-solid fa-heart text-white bg-red-500 flex justify-center items-center rounded-full h-8 w-8"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="stars ">
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                        </div>
+                        <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum
+                            eius
+                            nulla!</p>
+
+                        <div class="">Rahul Sharma</div>
+                        <div class="text-gray-400">UI/UX Designer</div>
+
+                    </div>
+                </div>
+
+                <!-- cust 2 -->
+                <div class="glow relative min-w-64 w-64 rounded-lg bg-gradient-to-t from-[#ffffff38]   p-[1px]">
+
+                    <div
+                        class="relative w-full h-full rounded-lg bg-gradient-to-t from-[#2d201e] to-[#0d0d0d]  text-[12px] p-3">
+                        <!-- profile pic -->
+                        <div class="absolute top-0 -translate-y-1/2  w-full flex justify-center items-center">
+                            <div class="w-auto  gap-2 flex p-1.5 bg-[#2e2e2e] rounded-full ">
+                                <img class="object-fill h-8 w-8 rounded-full "
+                                    src="https://pps.whatsapp.net/v/t61.24694-24/456321397_1189556845651585_6063297233160402127_n.jpg?ccb=11-4&oh=01_Q5AaIEkAQ3ylKVSVhTOqS1MHnhe_ZrCvitd4RAgVerwNL5dJ&oe=67107D37&_nc_sid=5e03e0&_nc_cat=100"
+                                    alt="">
+                                <i
+                                    class="fa-solid fa-heart text-white bg-red-500 flex justify-center items-center rounded-full h-8 w-8"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="stars ">
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                        </div>
+                        <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum
+                            eius
+                            nulla!</p>
+
+                        <div class="">Rahul Sharma</div>
+                        <div class="text-gray-400">UI/UX Designer</div>
+
+                    </div>
+                </div>
+
+                <!-- cust 3 -->
+                <div class="glow relative min-w-64 w-64 rounded-lg bg-gradient-to-t from-[#ffffff38]   p-[1px]">
+
+                    <div
+                        class="relative w-full h-full rounded-lg bg-gradient-to-t from-[#2d201e] to-[#0d0d0d]  text-[12px] p-3">
+                        <!-- profile pic -->
+                        <div class="absolute top-0 -translate-y-1/2  w-full flex justify-center items-center">
+                            <div class="w-auto  gap-2 flex p-1.5 bg-[#2e2e2e] rounded-full ">
+                                <img class="object-fill h-8 w-8 rounded-full "
+                                    src="https://pps.whatsapp.net/v/t61.24694-24/456321397_1189556845651585_6063297233160402127_n.jpg?ccb=11-4&oh=01_Q5AaIEkAQ3ylKVSVhTOqS1MHnhe_ZrCvitd4RAgVerwNL5dJ&oe=67107D37&_nc_sid=5e03e0&_nc_cat=100"
+                                    alt="">
+                                <i
+                                    class="fa-solid fa-heart text-white bg-red-500 flex justify-center items-center rounded-full h-8 w-8"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="stars ">
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                        </div>
+                        <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum
+                            eius
+                            nulla!</p>
+
+                        <div class="">Rahul Sharma</div>
+                        <div class="text-gray-400">UI/UX Designer</div>
+
+                    </div>
+                </div>
+
+                <!-- cust 4 -->
+                <div class="glow relative min-w-64 w-64 rounded-lg bg-gradient-to-t from-[#ffffff38]   p-[1px]">
+
+                    <div
+                        class="relative w-full h-full rounded-lg bg-gradient-to-t from-[#2d201e] to-[#0d0d0d]  text-[12px] p-3">
+                        <!-- profile pic -->
+                        <div class="absolute top-0 -translate-y-1/2  w-full flex justify-center items-center">
+                            <div class="w-auto  gap-2 flex p-1.5 bg-[#2e2e2e] rounded-full ">
+                                <img class="object-fill h-8 w-8 rounded-full "
+                                    src="https://pps.whatsapp.net/v/t61.24694-24/456321397_1189556845651585_6063297233160402127_n.jpg?ccb=11-4&oh=01_Q5AaIEkAQ3ylKVSVhTOqS1MHnhe_ZrCvitd4RAgVerwNL5dJ&oe=67107D37&_nc_sid=5e03e0&_nc_cat=100"
+                                    alt="">
+                                <i
+                                    class="fa-solid fa-heart text-white bg-red-500 flex justify-center items-center rounded-full h-8 w-8"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="stars ">
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                        </div>
+                        <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum
+                            eius
+                            nulla!</p>
+
+                        <div class="">Rahul Sharma</div>
+                        <div class="text-gray-400">UI/UX Designer</div>
+
+                    </div>
+                </div>
+
+
+                <!-- cust 5 -->
+                <div class="glow relative min-w-64 w-64 rounded-lg bg-gradient-to-t from-[#ffffff38]   p-[1px]">
+
+                    <div
+                        class="relative w-full h-full rounded-lg bg-gradient-to-t from-[#2d201e] to-[#0d0d0d]  text-[12px] p-3">
+                        <!-- profile pic -->
+                        <div class="absolute top-0 -translate-y-1/2  w-full flex justify-center items-center">
+                            <div class="w-auto  gap-2 flex p-1.5 bg-[#2e2e2e] rounded-full ">
+                                <img class="object-fill h-8 w-8 rounded-full "
+                                    src="https://pps.whatsapp.net/v/t61.24694-24/456321397_1189556845651585_6063297233160402127_n.jpg?ccb=11-4&oh=01_Q5AaIEkAQ3ylKVSVhTOqS1MHnhe_ZrCvitd4RAgVerwNL5dJ&oe=67107D37&_nc_sid=5e03e0&_nc_cat=100"
+                                    alt="">
+                                <i
+                                    class="fa-solid fa-heart text-white bg-red-500 flex justify-center items-center rounded-full h-8 w-8"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="stars ">
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                            <i class="fa-solid fa-star text-[#dba658] text-[10px]"></i>
+                        </div>
+                        <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum
+                            eius
+                            nulla!</p>
+
+                        <div class="">Rahul Sharma</div>
+                        <div class="text-gray-400">UI/UX Designer</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- sticky Back to top -->
+    <button id="scrollToTop"
+        class="fixed w-16 h-16 rounded-full bg-white bottom-16 right-0 m-8 cursor-pointer flex justify-center items-center z-50">
+        <i class="fa-solid fa-chevron-up text-gray-800"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="relative sm:px-0 px-8  w-full max-w-[1080px]">
+        <a href="#top">
+
+
+            <h1
+                class="mb-4 cursor-pointer inline-block  relative  bg-gradient-to-r from-[#ef3b9b] to-[#ed9839] text-transparent bg-clip-text text-3xl font-bold">
+                Web3
+            </h1>
+        </a>
+
+        <div class="flex sm:flex-row flex-col mb-8 sm:gap-16 gap-6">
+            <div class="left sm:w-1/2 flex-col ">
+
+                <p class="about   text-white opacity-45 pb-4 text-[12px] font-thin">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ducimus, aliquid iure, blanditiis hic modi quidem, numquam maiores
+                    earum asperiores commodi autem recusandae dolore.</p>
+                <div class="social flex gap-4 cursor-pointer mb-4">
+                    <i
+                        class="w-8 p-4 h-8 rounded-full bg-[#455595] flex justify-center items-center fa-brands fa-facebook-f"></i>
+                    <i
+                        class="w-8 p-4 h-8 rounded-full bg-[#3d9dee] flex justify-center items-center fa-brands fa-twitter"></i>
+                    <i
+                        class="w-8 p-4 h-8 rounded-full bg-[#f60085] flex justify-center items-center fa-brands fa-instagram"></i>
+                    <i
+                        class="w-8 p-4 h-8 rounded-full bg-[#f41226] flex justify-center items-center fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="right w-full flex gap-16 ">
+                <div class="r1">
+                    <h6>Contact Us</h6>
+                    <ul class="text-white opacity-45 flex flex-col gap-2 text-[12px] font-thin mt-4">
+                        <a href="#topp">
+                            <li class="cursor-pointer">Home</li>
+                        </a>
+                        <li class="cursor-pointer">About</li>
+                        <li class="cursor-pointer">Services</li>
+                        <li class="cursor-pointer">Portfolio</li>
+                    </ul>
+                </div>
+                <div class="r2">
+                    <h6>Useful Link</h6>
+                    <ul class="text-white opacity-45 flex flex-col gap-2 text-[12px] font-thin mt-4">
+                        <a href="#topp">
+                            <li class="cursor-pointer"><i class="mr-2 fa-solid fa-phone "></i>Home</li>
+                        </a>
+                        <li class="cursor-pointer"><i class="fa-solid fa-envelope mr-2"></i>About</li>
+                        <li class="cursor-pointer"><i class="fa-solid fa-house mr-2"></i>Services</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="font-sans font-thin text-white opacity-45 py-4 w-full  border-t text-center ">All rights
+            reserved
+            &#169; Rahul 2024</div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+
+
+        gsap.to("#orgB", {
+            top: 210,
+            right: 150,
+            scale: .5,
+
+            duration: 3,
+            yoyo: true,
+            repeat: -1,
+        })
+
+        gsap.to("#pinkB", {
+            top: 240,
+            left: 120,
+            scale: 1.5,
+
+            duration: 3,
+            yoyo: true,
+            repeat: -1,
+        })
+
+        gsap.to("#skull", {
+            top: -65,
+            duration: 4,
+            yoyo: true,
+            repeat: -1,
+
+        })
+        gsap.to("#srvcimg", {
+            top: -65,
+            duration: 3,
+            delay: 1,
+            yoyo: true,
+            repeat: -1,
+
+        })
+
+
+        document.getElementById("scrollToTop").onclick = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+
+        window.onscroll = function () {
+            const btn = document.getElementById("scrollToTop");
+            const mbMenu = document.getElementById("mbMenu");
+
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+
+
+                if (window.matchMedia("(max-width: 640px)").matches) {
+                    mbMenu.style.display = "block";
+                } else {
+                    mbMenu.style.display = "none";
+                }
+            } else {
+                btn.style.display = "none";
+                mbMenu.style.display = "none";
+            }
+        };
+
+
+        window.onresize = function () {
+            const mbMenu = document.getElementById("mbMenu");
+
+
+            if (window.matchMedia("(max-width: 640px)").matches) {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mbMenu.style.display = "block";
+                }
+            } else {
+                mbMenu.style.display = "none";
+            }
+        };
+
+
+    </script>
+</body>
+
+
+</html>
